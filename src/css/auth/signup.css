@@ -1,0 +1,253 @@
+.signup-container {
+    background-image: url("../../static/auth/Signin-bg.png") !important;
+    background-size: 100% 100%;
+    position: fixed;
+    z-index: 999;
+    padding: 2rem 6rem;
+    width:auto;
+    height:auto;
+    min-height: 75%;
+    display: grid;
+    place-items: center;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.s-c-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s-c-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.s-c-header img {
+    width: 12%;
+}
+
+.signup-card {
+    width: 100%;
+    min-height: 80%;
+    height: auto;
+    padding: 1rem 3rem;
+    background: #FEF8E9;
+    border-radius: 7px;
+}
+
+.s-c-form {
+    width: 53vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s-c-form img {
+    height: 18rem;
+    padding-top: 0 !important;
+}
+
+form {
+    width: 30vw;
+    display: flex;
+    gap: .8rem;
+    flex-direction: column;
+    padding-top: 0 !important;
+}
+
+.PhoneInputCountryIconImg {
+    height: 1rem !important;
+}
+
+.login-with-phone {
+    width: 100% !important;
+}
+
+
+.s-c-form .form-row:first-child,
+.s-c-form .form-row:nth-child(2),
+.s-c-form .form-row:nth-child(4),
+.s-c-form .form-row:nth-child(5)
+ {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    grid-gap: 10px;
+}
+
+.s-c-form .form-row:nth-child(3) {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 10px
+}
+
+
+
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 29px;
+    color: #3D3D3D;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: .7rem 1rem;
+    background: #fff;
+    border: none;
+    outline: none;
+}
+
+
+/* SignIN */
+
+.sign-in .form-row:nth-child(1) input {
+    width: 22vw;
+    font-size: 19px;
+}
+
+.sign-in .form-row:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(1, 25vw);
+    grid-gap: 10px;
+}
+
+.sign-in label {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.sign-in .signin-phone {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.sign-in .not-register {
+    width: 25vw;
+    text-align: right;
+}
+
+.sign-in .not-register strong {
+    color: rgb(255, 89, 89);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sign-in .form-row {
+    margin: 1rem 0;
+    max-width: 100%;
+    grid-template-columns: auto !important;
+}
+
+.sign-in .form-row button {
+    width: 100% !important;
+}
+
+
+.form-row-otp div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .signup-container .pop-close {
+        top: .5rem !important;
+        right: .2rem;
+    }
+
+    .signup-container {
+        z-index: 999;
+        width: 98vw;
+        height: auto;
+        padding: .5rem;
+        top: 50%;
+    }
+
+    .s-c-header {
+        height: 3rem;
+    }
+
+    .s-c-header>img {
+        margin-right: 1rem;
+        width: 8rem;
+    }
+
+    .s-c-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .signup-card {
+        padding: 1rem 1rem;
+        width: 95vw;
+        height: auto;
+        min-height: 60vh;
+    }
+
+    .s-c-form img {
+        display: none;
+    }
+
+    .s-c-form.sign-in {
+        width: 80vw;
+    }
+
+    .s-c-form form {
+        padding-top: 0rem !important;
+        width: 80vw !important;
+    }
+
+    .s-c-form .form-row {
+        max-width: 80vw;
+        grid-template-columns: 1fr !important;
+    }
+
+
+    .sign-in .not-register {
+        width: 80vw;
+    }
+
+
+    /* .signup-card */
+
+    .s-c-form {
+        width: 100%;
+    }
+
+    .s-c-form form {
+        width: 100% !important;
+        gap: 0;
+
+    }
+
+    .s-c-form form label {
+
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .s-c-form form input {
+        padding: .5rem 1rem;
+    }
+
+    .form-row-otp input {
+        margin: 0rem !important;
+    }
+
+    .form-row-otp label {
+        width: 100%;
+        text-align: left !important;
+    }
+
+
+}

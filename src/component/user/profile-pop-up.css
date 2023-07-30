@@ -1,0 +1,90 @@
+.profile-popup {
+    position: fixed;
+    z-index: 999;
+    padding-left: 1.5rem;
+    width: 221px;
+    height: auto;
+    top: 4rem;
+    right: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    border-radius: 3px;
+    display: flex;
+    gap: .7rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.pop-close {
+    top: .2rem !important;
+    background: rgb(255, 72, 72) !important;
+    color: #fff !important;
+}
+
+.profile-popup .menu-item {
+    cursor: pointer;
+    font-weight: 600;
+    border-bottom: 2.5px solid #6e6e6e;
+    padding: .5rem 0;
+    font-size: 16px;
+    line-height: 19px;
+    color: #545454;
+}
+.profile-popup .menu-item:last-child {
+    border-bottom: none !important;
+}
+
+
+
+
+.notification-popup {
+    right: 0;
+    padding: 0;
+    padding-top: 1rem;
+    cursor: pointer;
+    justify-content: unset;
+    width: 320px;
+    height: 374px;
+}
+
+.notification-popup .notifi-item {
+    padding: .3rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.notification-popup .notifi-item>span {
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background: red;
+}
+
+.n-i-type {
+    display: flex;
+    flex-direction: column;
+}
+
+.n-i-type span:first-child {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.n-i-type span:last-child {
+    color: #545454;
+}
+
+.mobile-navbar {
+    display: none !important;
+}
+
+@media screen and (max-width:724px) {
+    .mobile-navbar {
+        display: unset !important;
+    }
+
+    .notification-popup {
+        width: 70vw !important;
+    }
+}

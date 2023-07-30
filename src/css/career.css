@@ -1,0 +1,234 @@
+.Career {
+    background: #F5F5F5;
+}
+
+.c-about {
+    height: 40vh;
+    padding: 2rem 4rem;
+    background-image: url("../static/assets/about-bg.png");
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    font-weight: 600;
+}
+
+.c-about span {
+    font-size: 1rem;
+}
+
+.c-about h1 {
+    font-size: 2.5rem;
+
+}
+
+.why-join {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    padding: 3rem 5rem;
+}
+
+.why-join .w-j-content {
+    color: #3D3D3D;
+    padding: 2rem 1rem;
+}
+
+.why-join .w-j-content h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.why-join img {
+    width: 30vw;
+}
+
+
+.find-job {
+    position: relative;
+
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.find-job::before {
+    content: "";
+    width: 20rem;
+    height: 40rem;
+    left: 0;
+    top: -10rem;
+    position: absolute;
+    background-image: url("../static/assets/vector2.png");
+}
+
+.find-job::after {
+    content: "";
+    width: 20rem;
+    height: 40rem;
+    right: 0;
+    position: absolute;
+    background-image: url("../static/assets/Vector\ 5.png");
+}
+
+.find-job h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.form-card {
+    position: relative;
+    width: 70vw;
+    height: 6rem;
+    padding: 0 6vw;
+    margin: 2rem 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 45% 50%;
+    background: #FEF8E9;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+
+.form-card::after {
+    position: absolute;
+    content: "";
+    width: 7rem;
+    height: 8rem;
+    background-image: url("../static/assets/search\ vector.png");
+    background-size: 100% 100%;
+    right: -3rem;
+    top: 0;
+}
+
+.form-card>* {
+    width: 45%;
+}
+
+.form-card>div {
+    display: flex;
+}
+
+
+.form-card input {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+    width: 357px;
+    height: 49.94px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:724px) {
+    .c-about {
+        padding: 1rem;
+        height: auto;
+        gap: 0;
+    }
+
+    .c-about span {
+        font-size: .8rem;
+    }
+
+    .Career h1 {
+        font-size: 1.7rem !important;
+    }
+
+    .c-about p {
+        font-size: .8rem;
+    }
+
+    .why-join {
+        padding: 0;
+        height: auto;
+    }
+
+    .w-j-img {
+        display: none;
+    }
+
+    .form-card {
+        width: 95vw;
+        height: 22vh;
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+
+    .form-card>* {
+        gap: .5rem;
+        width: 100% !important;
+    }
+
+
+
+    .form-card div {
+        display: grid;
+        grid-template-columns: 1fr !important;
+    }
+
+    .form-card input {
+        height: 2.5rem;
+    }
+
+    .form-card div input {
+        width: 100% !important;
+
+    }
+
+
+
+    .form-card::after {
+        top: unset;
+        right: 0;
+        bottom: 0;
+    }
+
+    .search-card {
+        padding: 0rem 1rem !important;
+        width: 95vw !important;
+        height: auto !important;
+        position: relative;
+    }
+
+    .s-card-header {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+
+    .s-card-header .job-position {
+        flex-wrap: wrap;
+        gap: .5rem !important;
+    }
+
+    .s-card-header .job-position h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .job-position strong {
+        font-size: 1rem !important;
+    }
+
+    .search-card-container {
+        padding: 0 !important;
+    }
+
+    .card-header > span{
+        font-size: .8rem;
+    }
+     .search-card div button {
+        padding: .4rem .2rem !important;
+        position: absolute;
+        top: 4rem;
+        width: 5rem;
+        height: 2.5rem;
+    }
+
+}

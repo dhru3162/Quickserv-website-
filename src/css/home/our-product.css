@@ -1,0 +1,108 @@
+.our-product {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    background: #FEF8E9;
+}
+
+.our-product::after {
+    z-index: -9;
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 20vh;
+    bottom: -5rem;
+    background-image: url("../../static/assets/Vector-service.png");
+    background-size: 100% 100%;
+}
+.our-product::before {
+    z-index: -9;
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 20vh;
+    top: -5rem;
+    background-image: url("../../static/assets/Vector-service.png");
+    transform: rotate(180deg);
+    background-size: 100% 100%;
+}
+
+.o-p-button {
+    /* background-image: url(""); */
+}
+
+.our-product .card-container {
+    margin: 0 auto;
+    padding-top: 2rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
+    white-space: nowrap
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    min-width: 26rem;
+    width: 25rem !important;
+
+    margin: 0;
+    margin-bottom: 1rem;
+    height: 18rem !important;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.our-product .product-card img {
+    width: 100%;
+    height: 80%;
+    border: 1px solid #f69c9c;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.product-card span {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #3D3D3D;
+}
+
+.our-product button {
+    position: relative;
+    width: 15rem;
+}
+
+.our-product button img {
+    width: 3.5rem;
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    transform: rotate(-30deg);
+}
+
+@media (max-width: 767px) {
+    .product-card {
+        min-width: 60vw !important;
+        width: 90vw !important;
+        height: 14rem !important;
+    }
+    .product-card img {
+        width: 90vw;
+    }
+ }

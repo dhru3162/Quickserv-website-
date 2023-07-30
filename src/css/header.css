@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 5rem;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
+}
+
+.user-profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+
+.user-profile .notification span {
+
+  position: absolute;
+  width: .7rem;
+  height: .7rem;
+  background: red;
+  border-radius: 50%;
+  top: 0;
+  right: -2px;
+}
+
+.user-profile>img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.notification img {
+  width: 1.3rem;
+}
+
+.user-profile>span {
+  overflow: hidden;
+  margin: 0 .5rem;
+  padding: .3rem 0;
+  border-bottom: 2px solid rgb(158, 163, 168);
+}
+
+.user-profile>span span:first-child {
+  padding-right: 2rem;
+}
+
+.header-left .logo img {
+  width: 10rem;
+  cursor: pointer;
+}
+
+.header .header-center ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.header-center ul li {
+  padding: .5rem 1rem;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3D3D3D;
+}
+
+.header-center ul li:hover {
+  color: rgb(255, 100, 100);
+}
+
+.header .header-right .signin-signup {
+  display: flex;
+  align-items: center;
+
+}
+
+.header-right .signin-signup button {
+  color: red !important;
+  font-weight: 500;
+  padding: .5rem 1rem;
+  margin: 0 .5rem;
+}
+
+.header-right .signin-signup button:hover {
+  background: rgb(255, 90, 90);
+  color: white !important;
+}
+
+/* CSS for mobile devices */
+@media (max-width: 767px) {
+  .header {
+    padding: 0 .5rem;
+    height: 4rem;
+  }
+
+  .profile-popup {
+    right: 0 !important;
+  }
+
+  .header .logo img {
+    width: 8rem;
+  }
+
+  .user-profile>span span:first-child {
+    padding-right: 1rem;
+    font-size: .8rem;
+  }
+
+  .header-right .user-profile img {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  .notification img {
+    width: 1.5rem !important;
+  }
+
+  .signin-signup .btn {
+    padding: .2rem 1rem !important;
+    font-size: .8rem;
+  }
+
+  .header-center {
+    display: none;
+  }
+
+  .header-center ul li {
+    margin: 5px;
+  }
+
+}

@@ -1,0 +1,172 @@
+.parent-wrapper {
+    background-color: #fef8e9;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.parent-wrapper .policy-obj {
+    position: absolute;
+    top: 1600px;
+    left: 0;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background: url("../static/assets/hero-banner-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    height: 600px;
+    width: 100%;
+}
+
+.header-wrapper .title {
+    color: #fff;
+    font-family: Inter;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10%;
+}
+
+.header-wrapper .icon {
+    position: absolute;
+    top: 415px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.policyPara {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.policyHead {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.policy_h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.content_section {
+    padding: 102px;
+}
+
+.ul_style{
+    list-style-type: disc;
+}
+
+@media (max-width: 1366px) {
+    .header-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        background: url("../static/assets/hero-banner-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100%;
+        height: 450px;
+        width: 100%;
+    }
+    .header-wrapper .title {
+        margin-top: 10%;
+    }
+    .header-wrapper .icon {
+        position: absolute;
+        top: 415px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        background: url("../static/assets/hero-banner-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100%;
+        height: 250px;
+        width: 100%;
+    }
+    .header-wrapper .title {
+        margin-top: 10%;
+        font-size: 2.5rem;
+    }
+    .header-wrapper .icon {
+        position: absolute;
+        top: 230px;
+        right: 30px;
+        width: 40px;
+        height: 50px;
+    }
+    .content_section {
+        padding: 60px;
+    }
+    .policy_h1 {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+    .policyHead {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .policyPara {
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 560px) {
+    .header-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        background: url("../static/assets/hero-banner-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100%;
+        height: 150px;
+        width: 100%;
+    }
+    .header-wrapper .title {
+        margin-top: 10%;
+        font-size: 1.5rem;
+    }
+
+    .header-wrapper .icon {
+        top: 150px;
+        right: 30px;
+        width: 30px;
+        height: 50px;
+    }
+
+    .content_section {
+        padding: 30px;
+    }
+    .policy_h1 {
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+    .policyHead {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .policyPara {
+        margin-bottom: 20px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}

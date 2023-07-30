@@ -1,0 +1,32 @@
+.hero {
+    margin: 0;
+    padding: 0;
+}
+.hero .hero-images{
+    overflow: hidden;
+}
+.hero .hero-images div{
+    outline: none;
+}
+.hero .hero-images img{
+ 
+    width: 100%;
+    height: 80vh;
+}
+.hero > img {
+    width: 100vw;
+  
+}
+.hero-images::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (max-width:724px) {
+    .hero-images{
+        height: 25vh !important;
+    }
+    .hero .hero-images img {
+        height: 25vh !important;
+       
+    }
+    
+}

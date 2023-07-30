@@ -1,0 +1,104 @@
+.testimonials {
+    padding: 1rem 0;
+    height: auto;
+
+}
+
+.testimonial_carousel {
+    width: 95vw;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.home_card_header>p {
+    width: 50vw;
+    text-align: center;
+}
+
+.testimonial_carousel img.right_scroll {
+    transform: rotate(180deg);
+}
+
+.testi_carousel_card img {
+    width: 5rem;
+    object-fit: cover;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.testi_carousel_card .quote img {
+    width: 1.7rem;
+    object-fit: contain;
+    height: 1.7rem;
+}
+
+.testi_carousel_card h2 {
+    font-size: 32px;
+    line-height: 39px;
+    color: #3D3D3D;
+}
+
+.testimonial_carousel .card-container {
+    transition: transform 0.3s ease-in-out;
+    padding-top: 2rem;
+    width: 80vw;
+    /* height: 50vh; */
+    display: flex;
+    padding: 2rem;
+    overflow-x: auto;
+    white-space: nowrap
+}
+
+.testimonial_carousel .card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial_carousel .testi_carousel_card {
+    width: 22rem;
+    margin: 0 1rem;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 5px;
+    padding: 1rem;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: 0.5rem 0.5rem rgb(163, 163, 163), -0.5rem -0.5rem #ccc;
+}
+
+.testimonial_carousel .testi_carousel_card p {
+    white-space: break-spaces;
+    min-width: 19rem !important;
+}
+
+@media (max-width: 767px) {
+    .testimonial_carousel .testi_carousel_card {
+        width: 90vw;
+        height: auto;
+    }
+
+
+    .testimonial_carousel .card-container {
+        flex-direction: row;
+        height: auto;
+        width: 95vw;
+    }
+
+    .testi_carousel_card p {
+        min-width: 75vw !important;
+    }
+
+    .testi_carousel_card h2 {
+        font-size: 22px;
+    }
+
+    .testi_carousel_card img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}

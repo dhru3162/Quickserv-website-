@@ -1,0 +1,162 @@
+.user-home {
+    width: 100vw;
+
+}
+
+.user-hero {
+    position: relative;
+    height: 70vh;
+    padding-top: 4rem;
+    padding-left: 6rem;
+}
+.here-banner-bg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.user-hero p {
+    margin-bottom: 1rem;
+    width: 40vw;
+}
+
+.user-hero h1 {
+    width: 40vw;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.user-home img {
+
+    width: 100%;
+}
+
+.a-u-button {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.a-u-button button:first-child {
+    border-radius: 0 .8rem .8rem 0;
+    text-align: right;
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
+}
+
+.a-u-button button:last-child {
+    border-radius: .8rem 0 0 .8rem;
+    text-align: left;
+    padding: 1rem 5rem;
+    font-size: 1.5rem;
+}
+
+.a-content {
+    padding: 5rem 0;
+    width: 90vw;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.a-content.reverse {
+    flex-direction: row-reverse;
+
+}
+
+.a-content p {
+    width: 50vw !important;
+}
+
+.a-content .a-img {
+    width: 30vw !important;
+    height: 40vh;
+}
+
+.a-content p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(61, 61, 61, 0.8);
+}
+
+.a-content .a-img {
+    position: relative;
+    border: 2px solid crimson;
+    border-radius: 5px;
+}
+
+.a-content .a-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 2rem;
+    left: 2rem;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:724px) {
+    .user-hero {
+        padding: .5rem;
+        height: 15vh;
+    }
+
+    .user-hero p {
+        width: 100%;
+        font-size: .9rem;
+    }
+
+    .user-hero h1 {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .c-u-container {
+        padding: .5rem 5vw !important;
+    }
+
+    .c-u-form {
+        grid-template-columns: 100% !important;
+    }
+
+    form {
+        width: 90vw !important;
+    }
+
+    .a-u-button button {
+        padding: .7rem !important;
+        font-size: 1rem !important;
+
+    }
+
+    .a-content {
+        padding: 2rem 0 !important;
+        display: flex;
+        flex-direction: column-reverse !important;
+        align-items: center;
+        gap: 1rem;
+        height: auto;
+        padding: 0;
+    }
+
+    .a-content p {
+        width: 95vw !important;
+        justify-items: center;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .a-content .a-img {
+        width: 95vw !important;
+        height: 13rem;
+    }
+
+    .a-content .a-img img {
+        position: static;
+    }
+}

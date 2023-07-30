@@ -1,0 +1,77 @@
+.request-detail {
+    width: 100%;
+    display: grid;
+    margin-top: 2rem;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.detail-list {
+    width: 100%;
+}
+
+.detail-list h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3D3D3D;
+}
+
+.detail-list span {
+    width: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    color: #3D3D3D;
+    display: inline-block;
+    line-height: 19px;
+    border-bottom: 2px solid #3D3D3D;
+}
+
+.detail-list.payment {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.detail-list.payment span {
+    border: none;
+}
+
+.request-status {
+    margin: 2rem 0;
+}
+
+.request-status .r-s-container {
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-around;
+}
+
+.request-status .r-s-container .status-icons {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.r-s-container .status-icons div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 50%;
+    padding: .5rem;
+    background: #FF5757;
+}
+.status-icons > span{
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.r-s-container .status-icons div.status-done {
+    background: #fff;
+    border: 1px solid rgb(255, 151, 151);
+}

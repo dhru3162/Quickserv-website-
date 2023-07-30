@@ -1,0 +1,97 @@
+ .address.card-wrapper {
+     width: 100%;
+     padding: 1rem;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+ }
+
+ .address .address-card {
+     height: auto;
+     margin: 0 auto;
+     padding: 1rem;
+     border-radius: 1rem;
+     width: 100%;
+     cursor: pointer;
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+ }
+
+ .address-save-btn {
+     padding: .3rem .5rem !important;
+     width: auto !important;
+ }
+
+ .default-address {
+     display: none;
+ }
+ .address-radio-btn {
+   display: flex !important;
+   gap: 8px;
+ }
+
+ .address .address-card.selected .default-address {
+     position: absolute;
+     display: inline-block;
+     font-weight: 600;
+     right: 1rem;
+ }
+
+ .address .address-details {
+     margin-bottom: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+ }
+
+ .address .address-details p {
+     margin: 0;
+ }
+ .address .add-address{
+    width: 100%;
+    text-align: right;
+    color: red;
+ }
+
+ .address .address-details strong {
+     font-weight: 600;
+ }
+
+ .address .address-actions {
+     display: flex;
+     align-items: flex-end;
+     gap: 5px;
+
+ }
+
+ .address button {
+     width: auto;
+     cursor: pointer;
+     padding: .5rem .8rem;
+     margin: 0 .2rem;
+     border-radius: 10rem;
+     outline: none;
+     border: none;
+     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+ }
+
+ .address.forms .address-actions span {
+     width: 6rem !important;
+     cursor: pointer;
+     padding: .5rem .8rem;
+     margin: 0 .2rem;
+     border-radius: 1rem;
+     outline: none;
+     border: none;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+ .address.forms {
+     padding: .5rem;
+ }
+
+ .address.forms .address-actions {
+     align-items: center;
+ }

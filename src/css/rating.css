@@ -1,0 +1,18 @@
+.rating {
+  display: inline-block;
+}
+
+.star {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 1.8rem;
+}
+
+.star.filled {
+  color: #FCD53F;
+}
+
+.star.empty {
+  color: lightgray;
+}
