@@ -82,6 +82,7 @@ const Contactus = () => {
                 </div>
                 <div className="c-u-form">
                     <form onSubmit={handleFormSubmit}>
+
                         <div className="form-row">
                             <div className="form-input">
                                 <label htmlFor="fname">First Name</label>
@@ -106,6 +107,7 @@ const Contactus = () => {
                                 />
                             </div>
                         </div>
+
                         <div className="form-row">
                             <div className="form-input">
                                 <label htmlFor="email">Email</label>
@@ -132,6 +134,7 @@ const Contactus = () => {
                                 />
                             </div>
                         </div>
+                        
                         <div className="form-row">
                             <div className="form-input">
                                 <label htmlFor="address">Address</label>
@@ -145,13 +148,14 @@ const Contactus = () => {
                                 />
                             </div>
                         </div>
+
                         <div className="form-row">
                             <div className="form-input">
                                 <label htmlFor="state">State</label>
                                 <select
                                     name="state"
                                     className="state"
-                                    
+
                                     value={formData.state}
                                     onChange={handleInputChange}
                                 >
@@ -175,7 +179,7 @@ const Contactus = () => {
                                 </select>
                             </div>
                             <div className="form-input">
-                                <label htmlFor="pincode">Pin Code</label>
+                                <label htmlFor="pincode">Area</label>
                                 <select
                                     name="pincode"
                                     className="pincode"
@@ -188,6 +192,7 @@ const Contactus = () => {
                                 </select>
                             </div>
                         </div>
+                        
                         <div className="form-row">
                             <div className="form-input">
                                 <label htmlFor="issue">Issue</label>
@@ -231,7 +236,7 @@ const Contactus = () => {
                             <button className="btn active" type="submit">Submit</button>
                         </div>
                     </form>
-                    < div className="support-map">
+                    <div className="support-map">
                         <div className="c-u-phone">
                             <div>
                                 <img src={icons.PHONE} alt="" />

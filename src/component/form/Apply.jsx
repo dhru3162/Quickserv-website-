@@ -129,11 +129,11 @@ const Apply = () => {
                         />
                     </div>
                     <div className="form-input">
-                        <label htmlFor="phone">Contact</label>
+                        <label htmlFor="phone">Mobile Number</label>
                         <input
                             type="tel"
                             name="phoneNumber"
-                            placeholder='Enter number'
+                            placeholder='Enter mobile number '
                             className="phone"
                             value={formData.phoneNumber}
                             onChange={handleInputChange}
@@ -152,7 +152,7 @@ const Apply = () => {
                         />
                     </div>
                     <div className="form-input">
-                        <label htmlFor="address">Yr of Experience</label>
+                        <label htmlFor="address">Total Years Of Experience</label>
                         <input
                             type="text"
                             name="experience"
@@ -177,7 +177,7 @@ const Apply = () => {
                         </select>
                     </div>
                     <div className="form-input">
-                        <label htmlFor="branch">Branch</label>
+                        <label htmlFor="branch">Location Applying For</label>
                         <select
                             name="branch"
                             className="branch"
@@ -207,19 +207,7 @@ const Apply = () => {
                             <option value="3">3 months</option>
                         </select>
                     </div>
-                    <div className="form-input">
-                        <label htmlFor="location">Location applying for</label>
-                        <select
-                            name="location"
-                            className="location"
-                            value={formData.location}
-                            onChange={handleInputChange}
-                        >
-                            <option value="">Select Location</option>
-                            <option value="Location1">Location 1</option>
-                            <option value="Location2">Location 2</option>
-                        </select>
-                    </div>
+
                 </div>
                 <div className="form-row">
                     <div className="form-input">
@@ -233,8 +221,12 @@ const Apply = () => {
                         </span>
                     </div>
                 </div>
-                <div className="form-row">
-                    <button className="btn active" type="submit">Apply</button>
+                <div className="form-row" style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    display: 'flex',
+                }}>
+                    <button className="btn active" type="submit" style={{width:'15rem'}}>Apply</button>
                 </div>
             </form>
 

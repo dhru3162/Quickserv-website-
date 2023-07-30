@@ -27,15 +27,16 @@
  .default-address {
      display: none;
  }
+
  .address-radio-btn {
-   display: flex !important;
-   gap: 8px;
+     display: flex !important;
+     /* gap: 8px; */
  }
 
  .address .address-card.selected .default-address {
      position: absolute;
      display: inline-block;
-     font-weight: 600;
+     /* font-weight: 600; */
      right: 1rem;
  }
 
@@ -49,10 +50,11 @@
  .address .address-details p {
      margin: 0;
  }
- .address .add-address{
-    width: 100%;
-    text-align: right;
-    color: red;
+
+ .address .add-address {
+     width: 100%;
+     text-align: right;
+     color: red;
  }
 
  .address .address-details strong {
@@ -64,6 +66,35 @@
      align-items: flex-end;
      gap: 5px;
 
+ }
+
+ .address-btn {
+     /* text-align: center; */
+     /* padding: 0.7rem 1rem; */
+     /* font-size: 1rem; */
+     /* font-weight: 600; */
+     /* border: 1px solid #ff5757; */
+     /* filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25)); */
+     /* border-radius: 4px;  */
+     cursor: pointer;
+ }
+
+ .address-btn:hover {
+     background-color: #ff5757;
+     color: #fff;
+ }
+
+ .address-btn-checked {
+     text-align: center;
+     padding: 0.7rem 1rem;
+     font-size: 1rem;
+     font-weight: 600;
+     border: 1px solid #ff5757;
+     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
+     border-radius: 4px;
+     cursor: pointer;
+     background-color: #ff5757;
+     color: #fff;
  }
 
  .address button {

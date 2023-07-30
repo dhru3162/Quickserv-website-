@@ -21,6 +21,7 @@
     display: grid;
     grid-template-columns: 1.7fr repeat(4, 1fr);
     gap: 20px;
+    height: fit-content;
 }
 
 .footer-section {
@@ -50,7 +51,7 @@
 
 .footer-section-list li {
     margin-bottom: 5px;
-    gap: 1rem;
+    gap: rem;
     display: flex;
 }
 

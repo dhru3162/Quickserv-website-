@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="footer-section">
                         <h4 className="footer-section-title">Contact Details</h4>
                         <ul className="footer-section-list ">
-                            <li><img src={icons.LOCATION} alt="" /><span>Viva Icon Building (A Wing) Oppsite D Mart, Sr No. 37/1/12, Hinjewadi, Pune -411057</span></li>
+                            <li><img src={icons.LOCATION} alt="" /><span>Viva Icon Building (A Wing) Oppsite DMart, Sr No. 37/1/12, Hinjewadi, Pune-411057</span></li>
                             <li > <img src={icons.PHONE} alt="" /><span>  +91 7030087300</span></li>
                             <li > <img src={icons.EMAIL} alt="" /><span> support@quikserv.com</span></li>
                         </ul>
@@ -24,9 +24,9 @@ const Footer = () => {
                             <Link to={"/about-us"} > <li>About Us </li></Link>
                             <Link to={"/Career"} > <li>Careers </li></Link>
                             <Link to={"/privacy-policy"}><li> Privacy and Policy</li></Link>
-                            <Link to={"/terms-conditions"} >Terms and Conditions</Link>
-                            <Link to={"/payment-policy"} >Payment Policy</Link>
-                            <Link to={"/refund-policy"} >Refund Policy</Link>
+                            <Link to={"/terms-conditions"} ><li>Terms and Conditions</li></Link>
+                            <Link to={"/payment-policy"} ><li>Payment Policy</li></Link>
+                            <Link to={"/refund-policy"} ><li>Refund and Cancellation Policy</li></Link>
                         </ul>
                     </div>
                     <div className="footer-section">
@@ -59,7 +59,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <hr />
+                <hr style={{marginTop: "60px"}} />
                 <div className="__copyright">
                     {new Date().getFullYear()} Powered by <strong>Analytics Valley Private Limited</strong> &copy; Copyright <strong>Quikserv Private Limited</strong>. All Rights Reserved
                 </div>

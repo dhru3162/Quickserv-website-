@@ -71,8 +71,24 @@ form {
     flex-direction: column;
 }
 
+.fname {
+    width: 14rem;
+}
+
+.lname {
+    width: 13rem;
+}
+
 label {
     margin-bottom: 5px;
+}
+
+.address {
+    display:inline-block;
+}
+
+.state {
+    display:inline-block;
 }
 
 input,
@@ -161,8 +177,6 @@ textarea {
     .c-u-form .form-row:nth-child(8) {
         grid-template-columns: 10vw 75vw !important;
     }
-
-    .c-u-map {}
 
     .c-u-phone {
         margin-top: 2rem;
